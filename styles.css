@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 body{
  font-family: poppins;
  background-color: #000;
@@ -148,6 +152,11 @@ section{
     gap: 46px;
     padding: 70px 35px;
     align-items: center;
+    border-top: 8px solid #222;
+}
+
+section.last{
+    border-bottom: 8px solid #222;
 }
 
 section div.texts h1{
@@ -176,4 +185,39 @@ section div.texts p{
 
 section:nth-child(even) div.texts {
     order:2;
+}
+
+section div.download{
+    border: 2px solid #666;
+    border-radius: 5px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 280px;
+    left: 450px;
+    margin-left: -270px;
+    background-color: #000;
+    grid-template-columns: max-content 1fr max-content;
+}
+
+section div.download img{
+    height: 75px;
+    width: auto;
+}
+
+.media.s3 img{
+    width: 400px;
+    position: relative;
+    z-index: 5;
+}
+
+.media.s3 video{
+    width: 250px;
+    position: absolute;
+    top:36px;
+    left:72px;
 }
